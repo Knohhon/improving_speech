@@ -1,0 +1,169 @@
+{
+  "name": "make_recording",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "HepDrRox6mk71J6345tZBk",
+    "node": "206:9",
+    "version": "2755626355"
+  },
+  "default": "MakeRecording",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Background Recording"
+      },
+      {
+        "type": "text",
+        "id": "Text Recording"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1 MakeRecording"
+      },
+      {
+        "type": "text",
+        "id": "StartRecording"
+      }
+    ],
+    "modes": {
+      "MakeRecording": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Background Recording",
+              "Text Recording",
+              "Rectangle 1 MakeRecording",
+              "StartRecording"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Background Recording",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "vector-content": "background_recording.svg"
+          },
+          {
+            "id": "Text Recording",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "170.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "557.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Текст",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "35.0",
+            "line-height": "1.2190000261579241",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Rectangle 1 MakeRecording",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "200.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "1000.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "320.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              }
+            },
+            "vector-content": "rectangle_1_make_recording.svg"
+          },
+          {
+            "id": "StartRecording",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "278.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "1032.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "354.82014388489205",
+              "saturation": "0.8853503184713376",
+              "value": "0.615686274509804"
+            },
+            "text-content": "Закончить",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "MakeRecording",
+      "size": {
+        "width": 720.0,
+        "height": 1280.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

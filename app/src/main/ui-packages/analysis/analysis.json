@@ -1,0 +1,443 @@
+{
+  "name": "analysis",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "HepDrRox6mk71J6345tZBk",
+    "node": "206:10",
+    "version": "2755626355"
+  },
+  "default": "Analysis",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 3 Analysis"
+      },
+      {
+        "type": "vector",
+        "id": "Background Analysis"
+      },
+      {
+        "type": "image",
+        "id": "free-png 1 Analysis"
+      },
+      {
+        "type": "vector",
+        "id": "free-png 2 Analysis"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1 Analysis"
+      },
+      {
+        "type": "image",
+        "id": "back 1 Analysis"
+      },
+      {
+        "type": "text",
+        "id": "Text Analysis"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 3 Quieter"
+      },
+      {
+        "type": "text",
+        "id": "Quieter"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 2 Faster"
+      },
+      {
+        "type": "text",
+        "id": "Faster"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 1 Louder"
+      },
+      {
+        "type": "text",
+        "id": "Louder"
+      }
+    ],
+    "modes": {
+      "Analysis": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 3 Analysis",
+              "Background Analysis",
+              "free-png 1 Analysis",
+              "free-png 2 Analysis",
+              "Rectangle 1 Analysis",
+              "back 1 Analysis",
+              "Text Analysis",
+              "Ellipse 3 Quieter",
+              "Quieter",
+              "Ellipse 2 Faster",
+              "Faster",
+              "Ellipse 1 Louder",
+              "Louder"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Rectangle 3 Analysis",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "vector-content": "rectangle_3_analysis.svg"
+          },
+          {
+            "id": "Background Analysis",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "vector-content": "background_analysis.svg"
+          },
+          {
+            "id": "free-png 1 Analysis",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "image-content": "free_png_1_analysis.png",
+            "scale": "cover"
+          },
+          {
+            "id": "free-png 2 Analysis",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-36.9000244140625"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-120.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "756.9000244140625"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1400.0"
+              }
+            },
+            "vector-content": "free_png_2_analysis.svg"
+          },
+          {
+            "id": "Rectangle 1 Analysis",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "35.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "35.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "vector-content": "rectangle_1_analysis.svg"
+          },
+          {
+            "id": "back 1 Analysis",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "43.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "45.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "32.5"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              }
+            },
+            "image-content": "back_1_analysis.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Text Analysis",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "170.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Текст",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "35.0",
+            "line-height": "1.2190000261579241",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Ellipse 3 Quieter",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "204.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "772.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "90.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "90.0"
+              }
+            },
+            "vector-content": "ellipse_3_quieter.svg"
+          },
+          {
+            "id": "Quieter",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "317.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "800.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "200.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Тише",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "35.0",
+            "line-height": "1.2190000261579241",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Ellipse 2 Faster",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "204.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "888.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "90.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "90.0"
+              }
+            },
+            "vector-content": "ellipse_2_faster.svg"
+          },
+          {
+            "id": "Faster",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "317.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "916.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "200.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Быстрее",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "35.0",
+            "line-height": "1.2190000261579241",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Ellipse 1 Louder",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "204.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "1004.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "90.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "90.0"
+              }
+            },
+            "vector-content": "ellipse_1_louder.svg"
+          },
+          {
+            "id": "Louder",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "317.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "1032.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "200.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Громче",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "35.0",
+            "line-height": "1.2190000261579241",
+            "typeface": "Montserrat"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Analysis",
+      "size": {
+        "width": 720.0,
+        "height": 1280.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,258 @@
+{
+  "name": "start",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "HepDrRox6mk71J6345tZBk",
+    "node": "206:3",
+    "version": "2755626355"
+  },
+  "default": "Start",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 3 Start"
+      },
+      {
+        "type": "vector",
+        "id": "Background Start"
+      },
+      {
+        "type": "image",
+        "id": "free-png 1 Start"
+      },
+      {
+        "type": "vector",
+        "id": "free-png 2 Start"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle Start recognition"
+      },
+      {
+        "type": "text",
+        "id": "Start recognition"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1 Start notebook"
+      },
+      {
+        "type": "text",
+        "id": "StartMTNotebook"
+      }
+    ],
+    "modes": {
+      "Start": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 3 Start",
+              "Background Start",
+              "free-png 1 Start",
+              "free-png 2 Start",
+              "Rectangle Start recognition",
+              "Start recognition",
+              "Rectangle 1 Start notebook",
+              "StartMTNotebook"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Rectangle 3 Start",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "vector-content": "rectangle_3_start.svg"
+          },
+          {
+            "id": "Background Start",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "vector-content": "background_start.svg"
+          },
+          {
+            "id": "free-png 1 Start",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "image-content": "free_png_1_start.png",
+            "scale": "cover"
+          },
+          {
+            "id": "free-png 2 Start",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-36.9000244140625"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-120.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "756.9000244140625"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1400.0"
+              }
+            },
+            "vector-content": "free_png_2_start.svg"
+          },
+          {
+            "id": "Rectangle Start recognition",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "200.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "450.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "320.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              }
+            },
+            "vector-content": "rectangle_start_recognition.svg"
+          },
+          {
+            "id": "Start recognition",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "238.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "482.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "354.82014388489205",
+              "saturation": "0.8853503184713376",
+              "value": "0.615686274509804"
+            },
+            "text-content": "Начать запись",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Rectangle 1 Start notebook",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "200.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "600.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "320.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              }
+            },
+            "vector-content": "rectangle_1_start_notebook.svg"
+          },
+          {
+            "id": "StartMTNotebook",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "210.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "631.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "354.82014388489205",
+              "saturation": "0.8853503184713376",
+              "value": "0.615686274509804"
+            },
+            "text-content": "Перейти в блокнот",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Start",
+      "size": {
+        "width": 720.0,
+        "height": 1280.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

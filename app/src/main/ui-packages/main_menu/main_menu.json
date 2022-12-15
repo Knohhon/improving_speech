@@ -1,0 +1,335 @@
+{
+  "name": "main_menu",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "HepDrRox6mk71J6345tZBk",
+    "node": "203:2",
+    "version": "2755626355"
+  },
+  "default": "MainMenu",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 3 MainMenu"
+      },
+      {
+        "type": "vector",
+        "id": "Background MainMenu"
+      },
+      {
+        "type": "image",
+        "id": "free-png 1 MainMenu"
+      },
+      {
+        "type": "vector",
+        "id": "free-png 2 MainMenu"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle Start"
+      },
+      {
+        "type": "text",
+        "id": "ToStart"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle Settings"
+      },
+      {
+        "type": "text",
+        "id": "Settings"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle Beginner"
+      },
+      {
+        "type": "text",
+        "id": "Beginner"
+      }
+    ],
+    "modes": {
+      "MainMenu": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "10.0",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 3 MainMenu",
+              "Background MainMenu",
+              "free-png 1 MainMenu",
+              "free-png 2 MainMenu",
+              "Rectangle Start",
+              "ToStart",
+              "Rectangle Settings",
+              "Settings",
+              "Rectangle Beginner",
+              "Beginner"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Rectangle 3 MainMenu",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "vector-content": "rectangle_3_main_menu.svg"
+          },
+          {
+            "id": "Background MainMenu",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "vector-content": "background_main_menu.svg"
+          },
+          {
+            "id": "free-png 1 MainMenu",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "image-content": "free_png_1_main_menu.png",
+            "scale": "cover"
+          },
+          {
+            "id": "free-png 2 MainMenu",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-36.9000244140625"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-120.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "756.9000244140625"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1400.0"
+              }
+            },
+            "vector-content": "free_png_2_main_menu.svg"
+          },
+          {
+            "id": "Rectangle Start",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "200.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "350.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "320.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              }
+            },
+            "vector-content": "rectangle_start.svg"
+          },
+          {
+            "id": "ToStart",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "305.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "382.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "354.82014388489205",
+              "saturation": "0.8853503184713376",
+              "value": "0.615686274509804"
+            },
+            "text-content": "Начать",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Rectangle Settings",
+            "margin": {
+              "left": "200.0",
+              "right": "200.0"
+            },
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "500.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              }
+            },
+            "vector-content": "rectangle_settings.svg"
+          },
+          {
+            "id": "Settings",
+            "margin": {
+              "left": "274.0",
+              "right": "274.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "532.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "354.82014388489205",
+              "saturation": "0.8853503184713376",
+              "value": "0.615686274509804"
+            },
+            "text-content": "Настройки",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Rectangle Beginner",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "end",
+                "offset": "-200.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "650.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "320.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              }
+            },
+            "vector-content": "rectangle_beginner.svg"
+          },
+          {
+            "id": "Beginner",
+            "alignment": {
+              "horizontal": {
+                "attachment": "end",
+                "offset": "-278.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "682.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "354.82014388489205",
+              "saturation": "0.8853503184713376",
+              "value": "0.615686274509804"
+            },
+            "text-content": "Я новичок",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "MainMenu",
+      "size": {
+        "width": 720.0,
+        "height": 1280.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

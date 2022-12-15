@@ -1,0 +1,270 @@
+{
+  "name": "tutorial",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "HepDrRox6mk71J6345tZBk",
+    "node": "206:7",
+    "version": "2755626355"
+  },
+  "default": "Tutorial",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 3 Tutorial"
+      },
+      {
+        "type": "vector",
+        "id": "background Tutorial"
+      },
+      {
+        "type": "image",
+        "id": "free-png 1"
+      },
+      {
+        "type": "vector",
+        "id": "free-png 2"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      },
+      {
+        "type": "image",
+        "id": "back 1"
+      },
+      {
+        "type": "text",
+        "id": "About courses"
+      }
+    ],
+    "modes": {
+      "Tutorial": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 3 Tutorial",
+              "background Tutorial",
+              "free-png 1",
+              "free-png 2",
+              "Rectangle 1",
+              "back 1",
+              "About courses"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Rectangle 3 Tutorial",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-0.3042236566541874"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-0.6530961394311134"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "721.2083740234375"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.71044921875"
+              }
+            },
+            "vector-content": "rectangle_3_tutorial.svg"
+          },
+          {
+            "id": "background Tutorial",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "vector-content": "background_tutorial.svg"
+          },
+          {
+            "id": "free-png 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-0.3042236566541874"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-0.6530961394311134"
+              }
+            },
+            "relative-transform": [
+              [
+                "1.0",
+                "2.953366717850514e-16",
+                "0.0"
+              ],
+              [
+                "-2.953366717850514e-16",
+                "1.0",
+                "0.0"
+              ]
+            ],
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "721.2083740234375"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.71044921875"
+              }
+            },
+            "image-content": "free_png_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "free-png 2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-0.23902867734409483"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-0.6732568740845863"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "758.1703491210938"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1400.777099609375"
+              }
+            },
+            "vector-content": "free_png_2.svg"
+          },
+          {
+            "id": "Rectangle 1",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "35.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "35.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          },
+          {
+            "id": "back 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "43.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "45.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "32.5"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              }
+            },
+            "image-content": "back_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "About courses",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "170.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "228.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Здесь скоро будут курсы для успешного начала.",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Tutorial",
+      "size": {
+        "width": 720.0,
+        "height": 1280.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

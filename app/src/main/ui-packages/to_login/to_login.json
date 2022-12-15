@@ -1,0 +1,445 @@
+{
+  "name": "to_login",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "HepDrRox6mk71J6345tZBk",
+    "node": "206:6",
+    "version": "2755626355"
+  },
+  "default": "ToLogin",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "free-png 4 Login"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 4 Login"
+      },
+      {
+        "type": "text",
+        "id": "Remembet me"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 8 ToLoging"
+      },
+      {
+        "type": "text",
+        "id": "WriteLogin"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 6 WritePassword"
+      },
+      {
+        "type": "text",
+        "id": "WritePassword"
+      },
+      {
+        "type": "image",
+        "id": "padlock 1 WritePassword"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 5 ToLogin"
+      },
+      {
+        "type": "text",
+        "id": "ToLogin Text inside"
+      },
+      {
+        "type": "image",
+        "id": "user 1 ToLogin"
+      },
+      {
+        "type": "text",
+        "id": "ToLogin Text"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 9 ToLogin"
+      }
+    ],
+    "modes": {
+      "ToLogin": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "free-png 4 Login",
+              "Rectangle 4 Login",
+              "Remembet me",
+              "Rectangle 8 ToLoging",
+              "WriteLogin",
+              "Rectangle 6 WritePassword",
+              "WritePassword",
+              "padlock 1 WritePassword",
+              "Rectangle 5 ToLogin",
+              "ToLogin Text inside",
+              "user 1 ToLogin",
+              "ToLogin Text",
+              "Rectangle 9 ToLogin"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "6.760563380281689",
+              "saturation": "0.5748987854251012",
+              "value": "0.9686274509803922"
+            }
+          },
+          {
+            "id": "free-png 4 Login",
+            "opacity": "0.30000001192092896",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1280.0"
+              }
+            },
+            "image-content": "free_png_4_login.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle 4 Login",
+            "border-radius": "30.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "5.0",
+              "offset-x": "10.0",
+              "offset-y": "5.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "85.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "390.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "550.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "500.0"
+              }
+            },
+            "vector-content": "rectangle_4_login.svg"
+          },
+          {
+            "id": "Remembet me",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "175.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "722.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.4117647058823529"
+            },
+            "text-content": "Remembet me",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Rectangle 8 ToLoging",
+            "border-radius": "30.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "260.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "780.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "200.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "vector-content": "rectangle_8_to_loging.svg"
+          },
+          {
+            "id": "WriteLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "317.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "792.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Login",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Rectangle 6 WritePassword",
+            "border-radius": "30.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "110.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "641.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "500.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "vector-content": "rectangle_6_write_password.svg"
+          },
+          {
+            "id": "WritePassword",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "175.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "653.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.4117647058823529"
+            },
+            "text-content": "Password",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "padlock 1 WritePassword",
+            "opacity": "0.699999988079071",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "130.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "656.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              }
+            },
+            "image-content": "padlock_1_write_password.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle 5 ToLogin",
+            "border-radius": "30.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "110.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "549.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "500.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "vector-content": "rectangle_5_to_login.svg"
+          },
+          {
+            "id": "ToLogin Text inside",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "175.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "561.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.4117647058823529"
+            },
+            "text-content": "Login",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.218999989827474",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "user 1 ToLogin",
+            "opacity": "0.699999988079071",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "130.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "564.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.66668701171875"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              }
+            },
+            "image-content": "user_1_to_login.png",
+            "scale": "cover"
+          },
+          {
+            "id": "ToLogin Text",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "110.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "440.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Login",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "55.0",
+            "line-height": "1.2189999667080966",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Rectangle 9 ToLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "130.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "726.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              }
+            },
+            "vector-content": "rectangle_9_to_login.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "ToLogin",
+      "size": {
+        "width": 720.0,
+        "height": 1280.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
