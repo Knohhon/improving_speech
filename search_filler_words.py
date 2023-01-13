@@ -10,9 +10,9 @@ def fwords(pth):
         return dict_filler_words
 
 
-def search_in_audiofile(*args):
+def search_in_audiofile(pth):
     bad_filler = []
-    filler = fwords(path)
+    filler = fwords(pth)
     words = finaltext.split(' ')
     for w in words:
         if w in filler.keys():
