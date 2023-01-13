@@ -1,6 +1,8 @@
 import pyaudio
 import wave
 
+# Запись звука в аудио файл
+
 CHUNK = 1024
 FRT = pyaudio.paInt16
 CHAN = 1
