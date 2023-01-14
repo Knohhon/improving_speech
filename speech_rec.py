@@ -1,3 +1,4 @@
+import search_filler_words
 import speech_recognition
 import wave
 import contextlib
@@ -38,3 +39,6 @@ score = words_in_min_audiofile(filename, finaltext)
 
 print(finaltext)
 print(score)
+
+list_filler_words = search_filler_words.search_in_audiofile(finaltext)
+print(list_filler_words)

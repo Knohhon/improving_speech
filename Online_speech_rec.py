@@ -1,3 +1,4 @@
+import search_filler_words
 import speech_recognition as sr
 import time
 
@@ -35,4 +36,5 @@ tm_sec = endTime - startTime
 print(mic_text)
 print(words_in_min(mic_text, tm_sec))
 
-
+list_filler_words = search_filler_words.search_in_audiofile(mic_text)
+print(list_filler_words)
