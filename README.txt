@@ -1,1 +1,1 @@
-Open the same branch
+Open other branches
