@@ -1,0 +1,175 @@
+openapi: 3.0.3
+info:
+  title: Улучшение речи
+  version: 0.0.1
+
+tags:
+  - name: analysis
+    description: Запросы, ответственные за всю обработку от преобразования речи в текст, до его оценки
+    
+paths:
+  /process:
+    post:
+      tags:
+        - analysis
+      summary: Обработка сразу и аудио и эталонного текста
+      description: Принимает аудио и эталонный текст, запускает их обработку(работает как последовательный запуск /transcribe и /analyze); После некоторого времени можно получить результат
+      requestBody:
+        content: 
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                audio:
+                  $ref: '#/components/schemas/RequestAudioFile'
+                text:
+                  $ref: '#/components/schemas/RequestTextFile'
+                  
+      responses:
+        '200':
+          description: В сервере не вылетело ошибок, но это не значит что запрос был удачным. Этот ответ может содержать сообщение об ошибке
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnalyzeResponse'
+  
+  /transcribe:
+    post:
+      tags:
+        - analysis
+      summary: Обработка только аудио
+      description: Принимает аудио и переволит его в текст; После некоторого времени можно получить результат
+      requestBody:
+        content: 
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                audio:
+                  $ref: '#/components/schemas/RequestAudioFile'
+                  
+      responses:
+        '200':
+          description: В сервере не вылетело ошибок, но это не значит что запрос был удачным. Этот ответ может содержать сообщение об ошибке
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnalyzeResponse'
+  
+  /analyze:
+    post:
+      tags:
+        - analysis
+      summary: Производит основной анализ
+      description: Принимает транскрипт и эталонный текст, запускает основной анализ; После некоторого времени можно получить результат
+      requestBody:
+        content: 
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                text:
+                  $ref: '#/components/schemas/RequestTextFile'
+                transcript:
+                  $ref: '#/components/schemas/TranscriptResult'
+                  
+      responses:
+        '200':
+          description: В сервере не вылетело ошибок, но это не значит что запрос был удачным. Этот ответ может содержать сообщение об ошибке
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnalyzeResponse'
+  
+  /result:
+    get:
+      tags:
+        - analysis
+      summary: Запрашивает результат обработки
+      description: Приложение должно переодически опрашивать этот URL, пока обработка не завершена, чтобы получать новые результаты после каждого шага анализа
+      parameters:
+        - name: id
+          in: query
+          schema:
+            type: string
+            format: uuid
+          required: true
+          description: ID, полученый из AnalyzeResponse
+      responses:
+        '200':
+          description: В сервере не вылетело ошибок, но это не значит что запрос был удачным. Этот ответ может содержать сообщение об ошибке
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResultResponse'
+  
+components:
+  schemas:
+    AnalyzeResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: Если false - то есть поле error, иначе есть поле id
+        id:
+          type: string
+          format: uuid
+          description: Число, по которому позже можно получить результат запроса
+        error:
+          type: string
+          description: Описание ошибки
+    
+    RecognizedWord:
+      type: array
+      minimum: 4
+      maximum: 4
+      description: Список из 4 элементов
+      items:
+        type: number
+        description: Элемент 0 - слово ; 1 - точность распознавания ; 2,3 - начальное и конечное время этого слова
+    
+    TranscriptResult:
+      type: array
+      description: Список распознанных слов в структуре RecognizedWord
+      items:
+        $ref: '#/components/schemas/RecognizedWord'
+    
+    SimilarityResult:
+      type: object
+      properties:
+        whole:
+          type: number
+          description: Схожесть всего текста полностью
+    
+    ResultList:
+      description: Список с разными типами результатов анализа
+      type: object
+      properties:
+        transcript:
+          $ref: '#/components/schemas/TranscriptResult'
+        similarity:
+          $ref: '#/components/schemas/SimilarityResult'
+      
+      
+    ResultResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: Если false - то есть поле error, иначе есть поле data
+        data:
+          $ref: '#/components/schemas/ResultList'
+        error:
+          type: string
+          description: Описание ошибки
+    
+    RequestAudioFile:
+      type: string
+      format: binary
+      description: Аудио, сжатое в формат OGG(Vorbis) с частотой 16 кГц
+    
+    RequestTextFile:
+      type: string
+      format: utf8
+      description: Эталонный текст, закодированный в UTF-8
+  
