@@ -1,6 +1,7 @@
 from typing import Iterable
 from io import BytesIO
 import queue, json, uuid
+from concurrent.futures import ThreadPoolExecutor
 import multiprocessing.synchronize
 
 from flask import Flask, flash, request, redirect, url_for, make_response
@@ -64,7 +65,7 @@ class SimilarityResult:
 
 
 class ResultList:
-    def __init__(self, results: Iterable):
+    def __init__(self, results: Iterable, done: bool):
         res_map = {}
         for result in results:
             str_type = getattr(result, 'RESULT_TYPE', None)
@@ -76,9 +77,12 @@ class ResultList:
             res_map[str_type] = result
 
         self.results = tuple(res_map.values())
+        self.done = bool(done)
 
     def to_json(self):
-        return {result.RESULT_TYPE:result.to_json() for result in self.results}
+        ret = {result.RESULT_TYPE:result.to_json() for result in self.results}
+        ret['done'] = self.done
+        return ret
 
 
 class AnalyzeResponse:
@@ -229,13 +233,17 @@ def worker_loop(in_queue: multiprocessing.Queue, out_queue: multiprocessing.Queu
 
 
 w = AnalyzeWorker()
+worker_threads = ThreadPoolExecutor(max_workers=2)
 app = Flask(__name__)
 
 results = {}
 def queue_work(result_generator: Iterable, request_id: str):
-    # TODO: Worker threads/processes
-    a = list(result_generator)
-    results[request_id] = ResultList(a)
+    def work():
+		# print('work() start')
+        results[request_id] = ResultList(result_generator, True)
+		# print('work() end')
+    results[request_id] = None
+    worker_threads.submit(work)
 
 @app.route("/process", methods=["POST"])
 def process():
@@ -291,8 +299,17 @@ def get_result():
 
     if req_id not in results:
         return make_response(ResultResponse(error='Несуществующий ID запроса').to_json())
-
-    result_list = results.pop(req_id)
+    
+    result_list = results[req_id]
+    if result_list is None:
+		# print('result_list is None')
+        return make_response(ResultResponse(ResultList([], False)).to_json())
+    
+    results[req_id] = None
+    if result_list.done:
+		# print('del '+req_id)
+        del results[req_id]
+    
     return make_response(ResultResponse(result_list).to_json())
 
 
